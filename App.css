@@ -1,0 +1,55 @@
+/* General Styles */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.Pokedex {
+  padding: 20px;
+}
+
+.Pokedex-winner, .Pokedex-loser {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50; /* Green for winners */
+}
+
+.Pokedex-loser {
+  color: #F44336; /* Red for losers */
+}
+
+/* Pokecard Styles */
+.Pokecard {
+  display: inline-block;
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for transform and shadow */
+}
+
+.Pokecard:hover {
+  transform: scale(1.05); /* Scale up Pokecard on hover */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Add shadow effect on hover */
+}
+
+.Pokecard img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s ease; /* Smooth transition for the image */
+}
+
+.Pokecard img:hover {
+  transform: rotate(360deg); /* Rotate image on hover */
+}
+
+.Pokecard h2 {
+  color: #333;
+  font-size: 20px;
+}
+
+.Pokecard p {
+  color: #666;
+  font-size: 16px;
+}
